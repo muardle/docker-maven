@@ -1,8 +1,8 @@
 FROM eclipse-temurin:21-jdk-alpine
 
-ENV MAVEN_VERSION="3.9.0"
+ENV MAVEN_VERSION="3.9.1"
 
-ENV MAVEN_SHA512="564fe44bfa9c7ad3e2703cbbac59d43a11fa39e4e68875d3d1584d0a0b7b77a1352da246b875c4c15d11ceb6b4dd9a0ce7dd7a48695725dce594f34325c9c605"
+ENV MAVEN_SHA512="4ae5a0d17f9e6cbe57640c481f426a9184dfb451c2bb7cc7db324da095f616a14e7c482a79240e5286e241d8cd2805ea1cd9c95e38954101c2fa4088baad9a1a"
 
 RUN wget --no-verbose https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.zip && \
   echo "${MAVEN_SHA512} apache-maven-${MAVEN_VERSION}-bin.zip" | sha512sum -c && \
